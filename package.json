@@ -7,9 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "ng build",
-    "heroku-postbuild": "ng build --prod"
+    "start": "nodemon index.js"
   },
 
   "author": "",
