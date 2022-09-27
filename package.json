@@ -2,9 +2,14 @@
   "name": "server-postgress",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "yarn": "1.x"
+  },
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "ng build",
+    "heroku-postbuild": "ng build --prod"
   },
 
   "author": "",
