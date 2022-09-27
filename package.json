@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon index.js",
-    "heroku-postbuild": "npm run build"
+    "start:dev": "nodemon index.js"
   },
 
   "author": "",
