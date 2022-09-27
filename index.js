@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 //обработка ошибок  последний мидлваре
 app.use(errorHandler)
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5432
 const start = async () => {
     try {
         await sequelize.authenticate()
