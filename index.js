@@ -9,9 +9,11 @@ const router = require('./routes/index')
 const errorHandler = require('./middleware/errorHandlingWiddleware')
 const path = require('path')
 const bodyParser = require('body-parser')
-
+const filePathMiddleware = require('./middleware/filePathMiddleware')
 const app = express()
+
 app.use(cors())
+app.use(filePathMiddleware(path.resolve(__dirname,'routes')))
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, 'static')))
 app.use(fileUpload({}))
