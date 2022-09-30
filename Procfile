@@ -1,1 +1,1 @@
-web: server-postgress node index.js
+web: node index.js
