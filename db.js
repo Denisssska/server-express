@@ -8,4 +8,4 @@ const {Sequelize} = require('sequelize')
 //         port:process.env.DB_PORT
 //     }
 // )
-module.exports = new Sequelize('postgres://user:postgres:5432/postgres')
+module.exports = new Sequelize('postgres://localhost:postgres:5432/postgres')
