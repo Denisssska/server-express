@@ -4,15 +4,9 @@ module.exports = new Sequelize(
     process.env.DB_USER,
     process.env.DB_PASSWORD, {
         dialect: 'postgres',
-        pool: {
-            max: 100,
-            min: 0,
-            idle: 200000,
-            // @note https://github.com/sequelize/sequelize/issues/8133#issuecomment-359993057
-            acquire: 1000000,
-        },
-        host: process.env.DB_HOST,
-        port: process.env.DB_PORT
+        host: process.env.DB_HOST ,
+        port: process.env.DB_PORT,
+        database:'5432'
     }
 )
 // let sequelize;
