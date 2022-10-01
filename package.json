@@ -29,5 +29,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
   }
 }
